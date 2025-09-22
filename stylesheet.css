@@ -1,0 +1,86 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /* height: 100%;
+    width: 100%; */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1; /* Ensure the overlay is above the background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+}
+
+.section{
+    position: relative;
+    font-family: 'Garamond';
+    color: black;
+}
+
+.section h1{
+    text-align: center;
+    font-size: max(6vw, 36px);
+    padding: 0;
+    margin: 10px;
+}
+
+.section li{
+    text-align: left;
+    font-size: max(2vw, 18px);
+    margin: 10px;
+    transition: ease 0.4s;
+}
+
+.section li:hover{
+    transform: scale(1.03);
+}
+
+#title {
+    font-size: max(8vw, 48px);
+    top : 35vh;
+    position: relative;
+}
+
+.blink_bar {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#tagline {
+    font-size: max(4vw, 24px);
+    top : 45vh;
+    position: relative;
+}
+
+.footer{
+    text-align: center;
+    width: 100vw;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.footer:hover{
+    background: rgba(0, 0, 0, 1);
+}
